@@ -1,0 +1,62 @@
+:root {
+    --main-clr: #FFC005;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-clr);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    background-color: white;
+    border-radius: 4px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.6rem;
+
+    border: 8px #F4F3F0 solid;
+    outline: none;
+    box-shadow: 0 0 3px 0 rgb(152, 152, 152);
+}
+
+.city-container {
+    background-color: white;
+    padding: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+
+.city-container:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(0.2px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.city-container:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(0.3px);
+    background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}
+
+.city-container .pop {
+    font-size: 0.8rem;
+}
+
+.city-container .searchValue {
+    background-color: var(--main-clr);
+}
+
+.city-container .city-text{
+    background-color: var(--main-clr);
+}
